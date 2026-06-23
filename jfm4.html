@@ -267,6 +267,41 @@
     .reveal{opacity:1;transform:none;transition:none}
     html{scroll-behavior:auto}
   }
+
+  /* === 06 Time Schedule : time-rail === */
+  .sched-rail{list-style:none;margin:18px 0 0;padding:0;position:relative}
+  .sched-rail::before{content:"";position:absolute;left:54px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .sched-row{display:grid;grid-template-columns:64px 1fr;align-items:start;column-gap:18px;position:relative;padding:9px 0}
+  .sched-time{font-family:var(--mono);font-size:1.05rem;color:var(--paper);letter-spacing:1px;text-align:right;padding-top:1px}
+  .sched-dot{position:absolute;left:48px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
+  .sched-mark .sched-dot,.sched-break .sched-dot{border-color:var(--olive);border-color:var(--c,var(--olive))}
+  @supports (background:color-mix(in srgb,red,blue)){
+    .sched-mark .sched-dot,.sched-break .sched-dot{box-shadow:0 0 0 4px color-mix(in srgb,var(--c,var(--olive)) 22%,transparent)}
+  }
+  .sched-body{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;min-width:0}
+  .sched-title{font-family:var(--jp);color:var(--paper);font-size:1.02rem;line-height:1.4}
+  .sched-arrow{font-family:var(--mono);color:var(--muted);padding:0 2px}
+  .sched-flag{font-family:var(--mono);font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--olive);color:var(--c,var(--olive));border:1px solid var(--olive);border-color:var(--c,var(--olive));border-radius:3px;padding:1px 7px;white-space:nowrap}
+  .sched-break{border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);background:rgba(93,146,180,.12)}
+  @supports (background:color-mix(in srgb,red,blue)){
+    .sched-break{background:linear-gradient(90deg,transparent 0,color-mix(in srgb,var(--blue) 12%,transparent) 64px,color-mix(in srgb,var(--blue) 12%,transparent) 100%)}
+  }
+  .sched-break .sched-title{color:var(--blue)}
+  .sched-mark .sched-title{color:var(--paper);color:var(--c,var(--paper))}
+
+  /* === 07 Rules of Engagement === */
+  .roe-list li{line-height:1.55}
+
+  @media(max-width:720px){
+    .sched-rail::before{left:5px}
+    .sched-row{grid-template-columns:1fr;column-gap:0;row-gap:2px;padding:11px 0 11px 26px}
+    .sched-time{text-align:left;font-size:1rem}
+    .sched-dot{left:0;top:16px}
+    .sched-break{background:rgba(93,146,180,.12)}
+    @supports (background:color-mix(in srgb,red,blue)){
+      .sched-break{background:color-mix(in srgb,var(--blue) 12%,transparent)}
+    }
+  }
 </style>
 </head>
 <body>
@@ -553,6 +588,91 @@
         <div class="pcap"><b>第36戦闘団</b> // JFM 参加者の皆さん</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sechead">
+      <span class="secnum">06</span>
+      <h2 class="sectitle">Time Schedule<span class="jp">タイムスケジュール（予定）</span></h2>
+    </div>
+
+    <div class="subhead reveal">// 当日の流れ<span class="jp">0800 受付開始 ─ 1800 完全撤収</span></div>
+
+    <ol class="sched-rail reveal" aria-label="当日のタイムスケジュール（予定）">
+      <li class="sched-row">
+        <span class="sched-time">0800</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">受付開始</span></span>
+      </li>
+      <li class="sched-row sched-mark" style="--c:var(--amber)">
+        <span class="sched-time">0920</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">節目</span><span class="sched-title">訓練開始式 <span class="sched-arrow" aria-hidden="true">→</span> 集合写真</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">1000</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">午前中のゲームスタート</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">1130</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">サバパラにおける訓練展示</span></span>
+      </li>
+
+      <li class="sched-row sched-break" style="--c:var(--blue)">
+        <span class="sched-time">1200</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">休憩</span><span class="sched-title">昼休憩</span></span>
+      </li>
+
+      <li class="sched-row">
+        <span class="sched-time">1300</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">午後のゲーム</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">1640</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">ゲーム終了</span></span>
+      </li>
+      <li class="sched-row sched-mark" style="--c:var(--amber)">
+        <span class="sched-time">1700</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">節目</span><span class="sched-title">閉会式</span></span>
+      </li>
+      <li class="sched-row sched-mark" style="--c:var(--red)">
+        <span class="sched-time">1800</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">完了</span><span class="sched-title">完全撤収</span></span>
+      </li>
+    </ol>
+
+    <p class="note reveal">（状況により時間の変動等ございます）</p>
+    <p class="note reveal">※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市）の略称。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sechead">
+      <span class="secnum">07</span>
+      <h2 class="sectitle">Rules of Engagement<span class="jp">レギュレーション</span></h2>
+    </div>
+
+    <ul class="tips roe-list reveal">
+      <li>サバゲーパラダイスのレギュレーションを準用（各人は確実にHPを確認）</li>
+      <li>それを見据えた上で準備をお願いします。</li>
+    </ul>
+
+    <div class="summary reveal">
+      <span class="tag">SAFETY CHECK</span>
+      <b>安全管理上、弾速チェックも実施致します。</b>
+    </div>
+
+    <p class="note reveal">※ここでの「HP」はホームページ（＝サバゲーパラダイス公式サイト）を指します。</p>
   </div>
 </section>
 
