@@ -285,6 +285,11 @@
   .sched-day{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--olive);text-transform:uppercase;margin:22px 0 0;padding-top:12px;border-top:1px solid var(--line-soft)}
   .sched-day:first-of-type{margin-top:10px}
   .sched-day + .sched-rail{margin-top:6px}
+  .sched-2col{display:grid;grid-template-columns:1fr .82fr;gap:30px;align-items:start;margin-top:6px}
+  .sched-src .src-doc{margin:6px 0 0;border:1px solid var(--line);background:#0d0f0a;padding:8px;line-height:0}
+  .sched-src .src-doc img{width:100%;height:auto;display:block;cursor:zoom-in}
+  .sched-src .src-doc figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;padding:8px 4px 2px;line-height:1.6}
+  .sched-src .note{margin-top:14px}
   .sched-row{display:grid;grid-template-columns:96px 1fr;align-items:start;column-gap:26px;position:relative;padding:9px 0}
   .sched-time{font-family:var(--mono);font-size:.9rem;color:var(--paper);letter-spacing:.5px;text-align:right;padding-top:2px}
   .sched-dot{position:absolute;left:102px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
@@ -320,6 +325,7 @@
     .sched-row{grid-template-columns:1fr;column-gap:0;row-gap:2px;padding:11px 0 11px 26px}
     .sched-time{text-align:left;font-size:1rem}
     .sched-dot{left:0;top:16px}
+    .sched-2col{grid-template-columns:1fr;gap:18px}
     .sched-break{background:rgba(93,146,180,.12)}
     @supports (background:color-mix(in srgb,red,blue)){
       .sched-break{background:color-mix(in srgb,var(--blue) 12%,transparent)}
@@ -679,6 +685,8 @@
 
     <div class="subhead reveal">全般時程<span class="jp">6/26 前泊受け入れ 〜 6/27 訓練終了式</span></div>
 
+    <div class="sched-2col reveal">
+    <div class="sched-rail-col">
     <div class="sched-day">6/26 ── 前日</div>
     <ol class="sched-rail reveal" aria-label="6月26日（前日）の時程">
       <li class="sched-row">
@@ -766,8 +774,19 @@
         <span class="sched-body"><span class="sched-flag">終了</span><span class="sched-title">訓練終了式</span></span>
       </li>
     </ol>
+    </div>
 
-    <p class="note reveal">（状況により時間の変動等ございます）<br>※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市大木470-1）の略称。</p>
+    <aside class="sched-src">
+      <div class="sched-day">Source ── 原本資料</div>
+      <figure class="src-doc">
+        <a href="images/schedule-source.jpg" target="_blank" rel="noopener" aria-label="全般時程（原本）を別タブで原寸表示">
+          <img src="images/schedule-source.jpg" loading="lazy" alt="全般時程（運営配布資料）。6/26前日の前泊組受け入れ、6/27当日0700〜1710の時程一覧">
+        </a>
+        <figcaption>全般時程（運営配布資料）── クリックで原寸</figcaption>
+      </figure>
+      <p class="note reveal">（状況により時間の変動等ございます）<br>※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市大木470-1）の略称。</p>
+    </aside>
+    </div>
   </div>
 </section>
 
