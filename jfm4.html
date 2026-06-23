@@ -203,6 +203,10 @@
   .team .force i{width:14px;height:14px;background:var(--tc);border-radius:2px;display:inline-block}
   .team .unit{font-family:var(--disp);font-weight:700;font-size:30px;margin:0;letter-spacing:.04em}
   .team .desc{margin:8px 0 0;font-size:14.5px;color:#d6d4c4}
+  .plabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin:14px 0 7px}
+  .platoons{display:flex;flex-wrap:wrap;gap:8px}
+  .platoons span{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--paper);border:1px solid var(--tc);background:rgba(255,255,255,.05);padding:4px 11px;border-radius:3px}
+  @supports (background:color-mix(in srgb,red,blue)){ .platoons span{background:color-mix(in srgb,var(--tc) 15%,transparent)} }
 
   /* ===== admin: service cards ===== */
   .svc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -629,11 +633,15 @@
         <p class="force"><i></i>Red Force / 赤</p>
         <p class="unit">第1中隊</p>
         <p class="desc">陸自メイン・旧装備中心。各隊の特色を活かした迫力ある展開を。</p>
+        <p class="plabel">小隊編成 / Platoons</p>
+        <div class="platoons"><span>1小隊</span><span>2小隊</span><span>3小隊</span></div>
       </div>
       <div class="team reveal" style="--tc:var(--blue)">
         <p class="force"><i></i>Blue Force / 青</p>
         <p class="unit">第2中隊</p>
         <p class="desc">陸自・空自・海自の混成。一体感を高めた編成。</p>
+        <p class="plabel">小隊編成 / Platoons</p>
+        <div class="platoons"><span>1小隊</span><span>2小隊</span><span>3小隊</span></div>
       </div>
     </div>
 
