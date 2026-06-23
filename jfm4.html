@@ -10,14 +10,14 @@
 <!-- Open Graph / SNS共有プレビュー -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="JFM4 作戦概要 / 大木島 奪還作戦">
-<meta property="og:description" content="自衛隊装備オンリーサバゲー Japan Force Meeting 04。状況付与①〜⑨を統合したブリーフィング。H-Day 2026年6月27日。主催: 飛龍堂 @HIRYU_TACTICS">
+<meta property="og:description" content="自衛隊装備オンリーサバゲー Japan Force Meeting 04 Rising Edition。状況付与①〜⑨を統合したブリーフィング。H-Day 2026年6月27日。主催: 飛龍堂 @HIRYU_TACTICS #JFM4">
 <meta property="og:url" content="https://itan63.github.io/playground/jfm4.html">
 <meta property="og:image" content="https://itan63.github.io/playground/jfm4-emblem.jpg">
 <meta property="og:site_name" content="JFM4 OPERATIONAL BRIEFING">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JFM4 作戦概要 / 大木島 奪還作戦">
-<meta name="twitter:description" content="自衛隊装備オンリーサバゲー Japan Force Meeting 04。状況付与①〜⑨を統合したブリーフィング。H-Day 2026年6月27日。">
+<meta name="twitter:description" content="自衛隊装備オンリーサバゲー Japan Force Meeting 04 Rising Edition。状況付与①〜⑨を統合したブリーフィング。H-Day 2026年6月27日。#JFM4">
 <meta name="twitter:image" content="https://itan63.github.io/playground/jfm4-emblem.jpg">
 <meta name="twitter:site" content="@HIRYU_TACTICS">
 <meta name="twitter:creator" content="@HIRYU_TACTICS">
@@ -96,7 +96,7 @@
   .metarow div{background:var(--panel);padding:12px 16px}
   .metarow dt{font-size:10.5px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:0 0 4px}
   .metarow dd{margin:0;font-size:15px;color:var(--paper)}
-  .metarow dd.hot{color:var(--red)}
+  .metarow dd.hot{color:#e9836f;font-weight:700}
 
   /* ===== section scaffold ===== */
   section{padding:42px 0;border-bottom:1px solid var(--line-soft)}
@@ -329,7 +329,7 @@
     </div>
     <div class="masthead">
       <img src="images/masthead-jfm4.jpg" alt="Japan Force Meeting 04 — 自衛隊装備オンリーサバゲー">
-      <div class="cap">Event // Japan Force Meeting 04 — 自衛隊装備オンリーサバゲー</div>
+      <div class="cap">Event // Japan Force Meeting 04 / Rising Edition — 自衛隊装備オンリーサバゲー</div>
     </div>
     <p class="eyebrow">Operations Order // 島嶼奪還作戦</p>
     <h1 class="opname">JFM<b>4</b></h1>
@@ -529,7 +529,7 @@
       <h2 class="sectitle">Operational Area<span class="jp">作戦地域（座標）</span></h2>
     </div>
     <div class="mapfull reveal">
-      <img id="aoMap" src="images/operational-map.jpg" alt="JFM 作戦地域 座標マップ">
+      <img id="aoMap" src="images/operational-map.jpg" loading="lazy" alt="作戦地域マップ。縦A〜P・横1〜25のグリッド。南側中央にSAFETY AREA、西側にFOB・車両基地、各地点をNATOフォネティックコードで表示">
     </div>
     <p class="maphint"><a href="#" onclick="return openFull('aoMap')">▣ 別ウィンドウで原寸表示</a></p>
 
@@ -619,7 +619,7 @@
       <div class="svc-card reveal">
         <h4>Safety / セーフティ配置</h4>
         <div class="svc-photo">
-          <img src="images/safety-area.jpg" alt="セーフティ 奥側の席">
+          <img src="images/safety-area.jpg" loading="lazy" alt="セーフティエリア奥側の座席。赤・第1中隊エリア">
           <div class="pcap">Far Side / <b>奥側の席 ＝ 赤・第1中隊エリア</b></div>
         </div>
         <div class="safety-map">
@@ -646,7 +646,7 @@
       <p>JFMは、自衛隊への愛やリスペクトを持った仲間が集うイベントです。「形だけ合わせておけばいい」という考え方とは異なりますので、何卒ご理解をお願いいたします。</p>
       <p class="punch">皆で楽しい『訓練』にしましょう！</p>
       <div class="spirit-photo">
-        <img src="images/spirit-jfm-members.jpg" alt="JFM 第36戦闘団 集合写真">
+        <img src="images/spirit-jfm-members.jpg" loading="lazy" alt="JFM 参加者の集合写真（第36戦闘団）">
         <div class="pcap"><b>第36戦闘団</b> // JFM 参加者の皆さん</div>
       </div>
     </div>
@@ -660,7 +660,7 @@
       <h2 class="sectitle">Time Schedule<span class="jp">タイムスケジュール（予定）</span></h2>
     </div>
 
-    <div class="subhead reveal">// 当日の流れ<span class="jp">0800 受付開始 ─ 1800 完全撤収</span></div>
+    <div class="subhead reveal">当日の流れ<span class="jp">0800 受付開始 ─ 1800 完全撤収</span></div>
 
     <ol class="sched-rail reveal" aria-label="当日のタイムスケジュール（予定）">
       <li class="sched-row">
@@ -712,8 +712,7 @@
       </li>
     </ol>
 
-    <p class="note reveal">（状況により時間の変動等ございます）</p>
-    <p class="note reveal">※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市）の略称。</p>
+    <p class="note reveal">（状況により時間の変動等ございます）<br>※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市大木470-1）の略称。</p>
   </div>
 </section>
 
@@ -758,6 +757,7 @@
   <div class="wrap">
     JFM4 // 大木島 奪還作戦 // 状況付与 統合ブリーフィング
     <div style="margin-top:14px;color:var(--muted)">主催 / ORGANIZER ── 飛龍堂 <a href="https://x.com/HIRYU_TACTICS" target="_blank" rel="noopener" style="color:var(--amber);text-decoration:none;border-bottom:1px solid var(--line)">@HIRYU_TACTICS</a></div>
+    <div style="margin-top:8px;color:var(--amber);letter-spacing:.28em">#JFM4</div>
     <span class="end">完</span>
   </div>
 </footer>
