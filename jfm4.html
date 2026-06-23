@@ -297,8 +297,9 @@
   .pphotos.two{grid-template-columns:1fr 1fr}
   .pphoto{margin:0;border:1px solid var(--line);border-left:3px solid var(--c,var(--olive));background:#0d0f0a;padding:6px;line-height:0}
   .pphoto img{width:100%;height:auto;display:block}
+  .pphotos.two .pphoto img{aspect-ratio:3 / 2;object-fit:cover}
   .pphoto figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;padding:8px 4px 3px;line-height:1.5}
-  @media(max-width:720px){ .pphotos.two{grid-template-columns:1fr} }
+  @media(max-width:720px){ .pphotos.two{grid-template-columns:1fr} .pphotos.two .pphoto img{aspect-ratio:auto} }
 
   @media(max-width:720px){
     .sched-rail::before{left:5px}
