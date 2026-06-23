@@ -292,6 +292,14 @@
   /* === 07 Rules of Engagement === */
   .roe-list li{line-height:1.55}
 
+  /* === timeline phase photos === */
+  .pphotos{display:grid;gap:10px;margin-top:14px}
+  .pphotos.two{grid-template-columns:1fr 1fr}
+  .pphoto{margin:0;border:1px solid var(--line);border-left:3px solid var(--c,var(--olive));background:#0d0f0a;padding:6px;line-height:0}
+  .pphoto img{width:100%;height:auto;display:block}
+  .pphoto figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;padding:8px 4px 3px;line-height:1.5}
+  @media(max-width:720px){ .pphotos.two{grid-template-columns:1fr} }
+
   @media(max-width:720px){
     .sched-rail::before{left:5px}
     .sched-row{grid-template-columns:1fr;column-gap:0;row-gap:2px;padding:11px 0 11px 26px}
@@ -402,6 +410,10 @@
             <li>成田空港の管制システムに大規模障害。空港運用が停止し、便の遅延・欠航が相次ぐ。</li>
             <li>在日東亜連邦国人による破壊工作・情報漏洩が全国的に頻発。関係機関は「組織的な撹乱工作」と見て警戒。</li>
           </ul>
+          <div class="pphotos two">
+            <figure class="pphoto"><img src="images/p01-jamming.jpg" loading="lazy" alt="千葉・茨城で発生した大規模な電波障害。テレビ・スマホにノイズが走る通信妨害のイメージ"><figcaption>電波障害・通信妨害 / 状況①</figcaption></figure>
+            <figure class="pphoto"><img src="images/p01-stock.jpg" loading="lazy" alt="東京証券取引所。株の大量誤発注によるシステムダウン・市場混乱"><figcaption>東証 大量誤発注 / 状況②</figcaption></figure>
+          </div>
         </div>
       </div>
 
@@ -413,6 +425,9 @@
             <li>器物破損・不審火・交通妨害が相次ぎ、千葉・茨城は強い警戒態勢に。</li>
             <li>千葉県沖50kmの観光離島〈大木島〉周辺で不審船が急増。武装した漁民らしき集団の活動が活発化。</li>
           </ul>
+          <div class="pphotos">
+            <figure class="pphoto"><img src="images/p02-alert.jpg" loading="lazy" alt="器物破損・不審火・交通妨害が相次ぎ、警戒態勢を強める警察"><figcaption>千葉・茨城 警戒態勢 / 状況⑤</figcaption></figure>
+          </div>
         </div>
       </div>
 
@@ -425,6 +440,9 @@
             <li>残っていた島民・観光客の一部を人質に取り、島全体の支配を宣言。</li>
             <li>避難者の証言から、武装集団は東亜連邦特殊部隊とみられる約15名規模の部隊と判明。</li>
           </ul>
+          <div class="pphotos">
+            <figure class="pphoto"><img src="images/p03-occupation.jpg" loading="lazy" alt="真夜中に島へ上陸し重要インフラを占拠した黒い服装の武装集団（東亜連邦特殊部隊とみられる）"><figcaption>武装集団の上陸・重要インフラ占拠 / 状況⑥</figcaption></figure>
+          </div>
         </div>
       </div>
 
@@ -438,6 +456,10 @@
             <li>島内に残された民間人は数名程度と推定。早期の救出・奪還が強く求められる。</li>
             <li>政府は侵略・切迫を鑑み、武力攻撃事態と認定し、防衛出動を閣議決定。</li>
           </ul>
+          <div class="pphotos two">
+            <figure class="pphoto"><img src="images/p04-entrench.jpg" loading="lazy" alt="重要施設周辺に防御陣地を構築し、爆破装置の設置も疑われる敵部隊"><figcaption>敵の防御陣地・爆破装置の脅威 / 状況⑧</figcaption></figure>
+            <figure class="pphoto"><img src="images/p04-diet.jpg" loading="lazy" alt="政府が武力攻撃事態を認定し防衛出動を閣議決定（国会）"><figcaption>武力攻撃事態 認定・防衛出動を閣議決定 / 状況⑧</figcaption></figure>
+          </div>
         </div>
       </div>
 
@@ -451,6 +473,9 @@
             <li>複数の護衛艦・航空支援部隊が島周辺に展開中。ただし島内の敵の規模・配置は依然不透明。</li>
             <li>上層部は「作戦は計画に従い進行」とするが、今後の展開は予断を許さない。</li>
           </ul>
+          <div class="pphotos">
+            <figure class="pphoto"><img src="images/p05-landing.jpg" loading="lazy" alt="第36戦闘団が大木島海岸へ上陸を開始（揚陸・上陸作戦）"><figcaption>第36戦闘団 大木島海岸へ上陸 / 状況⑨</figcaption></figure>
+          </div>
         </div>
       </div>
 
@@ -507,6 +532,28 @@
     <div class="mapnote reveal">
       <span class="tag">HOW TO READ // 座標の読み方</span>
       縦が <b>A〜P（行）</b>、横が <b>1〜25（列）</b> のグリッド。各地点は NATO フォネティックコード（A＝アルファ … Z＝ズールー）で呼称します。南側中央が <b>SAFETY AREA</b>、西側の <b>FOB・車両基地</b> が味方後方にあたります。
+    </div>
+
+    <div class="subhead">Island Profile <span class="jp">大木島の地理的特徴（想定）</span></div>
+    <div class="maprow reveal" style="align-items:start">
+      <div class="mapcard">
+        <figure style="margin:0;line-height:0">
+          <img src="images/island-aerial.jpg" loading="lazy" style="width:100%;height:auto;display:block" alt="大木島の空撮。左に桟橋・港湾（大木港）、中央〜右に集落・住宅・倉庫が密集し、周囲はエメラルドグリーンの浅瀬">
+        </figure>
+      </div>
+      <dl class="metarow" style="margin-top:0">
+        <div><dt>位置</dt><dd>千葉県銚子沖 約50km</dd></div>
+        <div><dt>面積</dt><dd>約3km²（田代島と同程度）</dd></div>
+        <div><dt>周囲</dt><dd>約11〜12km</dd></div>
+        <div><dt>行政</dt><dd>千葉県大木島村</dd></div>
+        <div><dt>常住人口</dt><dd>約150人</dd></div>
+        <div><dt>産業</dt><dd>漁業＋観光業</dd></div>
+      </dl>
+    </div>
+    <div class="mapnote reveal">
+      <span class="tag">TERRAIN // 地形・特徴</span>
+      島の<b>左側</b>に桟橋・港湾施設（大木港）、<b>中央〜右側</b>に集落・住宅・倉庫が密集。比較的平坦で道路は整備されているが、細い路地や建物密集地が多く <b>CQB（市街戦）が発生しやすい</b>。海岸はエメラルドグリーンの透明度が高い美しい海で、作戦時は <b>上陸ポイントとして重要</b>。<br><br>
+      <b>重要施設</b> ── 大木港（フェリー・物流の要）／通信施設（電波塔周辺）／簡易発電所／漁業協同組合倉庫／集落内重要建物（役場・民宿 など）
     </div>
   </div>
 </section>
