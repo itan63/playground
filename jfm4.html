@@ -281,10 +281,13 @@
 
   /* === 06 Time Schedule : time-rail === */
   .sched-rail{list-style:none;margin:18px 0 0;padding:0;position:relative}
-  .sched-rail::before{content:"";position:absolute;left:65px;top:8px;bottom:8px;width:2px;background:var(--line)}
-  .sched-row{display:grid;grid-template-columns:50px 1fr;align-items:start;column-gap:30px;position:relative;padding:9px 0}
-  .sched-time{font-family:var(--mono);font-size:1.05rem;color:var(--paper);letter-spacing:1px;text-align:right;padding-top:1px}
-  .sched-dot{position:absolute;left:58px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
+  .sched-rail::before{content:"";position:absolute;left:109px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .sched-day{font-family:var(--mono);font-size:12px;letter-spacing:.22em;color:var(--olive);text-transform:uppercase;margin:22px 0 0;padding-top:12px;border-top:1px solid var(--line-soft)}
+  .sched-day:first-of-type{margin-top:10px}
+  .sched-day + .sched-rail{margin-top:6px}
+  .sched-row{display:grid;grid-template-columns:96px 1fr;align-items:start;column-gap:26px;position:relative;padding:9px 0}
+  .sched-time{font-family:var(--mono);font-size:.9rem;color:var(--paper);letter-spacing:.5px;text-align:right;padding-top:2px}
+  .sched-dot{position:absolute;left:102px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
   .sched-mark .sched-dot,.sched-break .sched-dot{border-color:var(--olive);border-color:var(--c,var(--olive))}
   @supports (background:color-mix(in srgb,red,blue)){
     .sched-mark .sched-dot,.sched-break .sched-dot{box-shadow:0 0 0 4px color-mix(in srgb,var(--c,var(--olive)) 22%,transparent)}
@@ -674,55 +677,93 @@
       <h2 class="sectitle">Time Schedule<span class="jp">タイムスケジュール（予定）</span></h2>
     </div>
 
-    <div class="subhead reveal">当日の流れ<span class="jp">0800 受付開始 ─ 1800 完全撤収</span></div>
+    <div class="subhead reveal">全般時程<span class="jp">6/26 前泊受け入れ 〜 6/27 訓練終了式</span></div>
 
-    <ol class="sched-rail reveal" aria-label="当日のタイムスケジュール（予定）">
+    <div class="sched-day">6/26 ── 前日</div>
+    <ol class="sched-rail reveal" aria-label="6月26日（前日）の時程">
+      <li class="sched-row">
+        <span class="sched-time">1700〜1830</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">前泊組受け入れ</span></span>
+      </li>
+    </ol>
+
+    <div class="sched-day">6/27 ── 当日</div>
+    <ol class="sched-rail reveal" aria-label="6月27日（当日）の時程">
+      <li class="sched-row">
+        <span class="sched-time">0700</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">スタッフ・運営集合</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">0730〜0930</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">状況により事前受付開始</span></span>
+      </li>
       <li class="sched-row">
         <span class="sched-time">0800</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-title">受付開始</span></span>
+        <span class="sched-body"><span class="sched-title">セーフティオープン</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">0840〜0900</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">訓練展示要員予行</span></span>
       </li>
       <li class="sched-row sched-mark" style="--c:var(--amber)">
-        <span class="sched-time">0920</span>
+        <span class="sched-time">0930〜1020</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-flag">節目</span><span class="sched-title">訓練開始式 <span class="sched-arrow" aria-hidden="true">→</span> 集合写真</span></span>
+        <span class="sched-body"><span class="sched-flag">節目</span><span class="sched-title">訓練開始式</span></span>
       </li>
       <li class="sched-row">
-        <span class="sched-time">1000</span>
+        <span class="sched-time">1030〜1120</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-title">午前中のゲームスタート</span></span>
+        <span class="sched-body"><span class="sched-title">ゲーム（フラッグ＆CAS）</span></span>
       </li>
       <li class="sched-row">
-        <span class="sched-time">1130</span>
+        <span class="sched-time">1130〜1200</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-title">サバパラにおける訓練展示</span></span>
+        <span class="sched-body"><span class="sched-title">訓練展示</span></span>
       </li>
-
       <li class="sched-row sched-break" style="--c:var(--blue)">
-        <span class="sched-time">1200</span>
+        <span class="sched-time">1200〜1250</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-flag">休憩</span><span class="sched-title">昼休憩</span></span>
-      </li>
-
-      <li class="sched-row">
-        <span class="sched-time">1300</span>
-        <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-title">午後のゲーム</span></span>
+        <span class="sched-body"><span class="sched-flag">休憩</span><span class="sched-title">昼休み</span></span>
       </li>
       <li class="sched-row">
-        <span class="sched-time">1640</span>
+        <span class="sched-time">1255〜1310</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-title">ゲーム終了</span></span>
+        <span class="sched-body"><span class="sched-title">車両安全教育</span></span>
       </li>
-      <li class="sched-row sched-mark" style="--c:var(--amber)">
-        <span class="sched-time">1700</span>
+      <li class="sched-row">
+        <span class="sched-time">1310〜1330</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-flag">節目</span><span class="sched-title">閉会式</span></span>
+        <span class="sched-body"><span class="sched-title">命令下達</span></span>
       </li>
       <li class="sched-row sched-mark" style="--c:var(--red)">
-        <span class="sched-time">1800</span>
+        <span class="sched-time">1340〜1420</span>
         <span class="sched-dot" aria-hidden="true"></span>
-        <span class="sched-body"><span class="sched-flag">完了</span><span class="sched-title">完全撤収</span></span>
+        <span class="sched-body"><span class="sched-flag">メイン</span><span class="sched-title">#1 状況戦</span></span>
+      </li>
+      <li class="sched-row sched-mark" style="--c:var(--red)">
+        <span class="sched-time">1430〜1510</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">メイン</span><span class="sched-title">#2 状況戦</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">1540〜1610</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">Jvs民間（ラスト）</span></span>
+      </li>
+      <li class="sched-row">
+        <span class="sched-time">1630〜1700</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-title">じゃんけん大会</span></span>
+      </li>
+      <li class="sched-row sched-mark" style="--c:var(--amber)">
+        <span class="sched-time">1700〜1710</span>
+        <span class="sched-dot" aria-hidden="true"></span>
+        <span class="sched-body"><span class="sched-flag">終了</span><span class="sched-title">訓練終了式</span></span>
       </li>
     </ol>
 
