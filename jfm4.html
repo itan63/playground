@@ -153,6 +153,9 @@
   .pbody ul{margin:8px 0 0;padding-left:0;list-style:none}
   .pbody li{position:relative;padding-left:20px;margin-bottom:7px;color:#d6d4c4;font-size:14.5px}
   .pbody li::before{content:"▸";position:absolute;left:0;color:var(--c);font-size:13px;top:1px}
+  .pbody li.key{color:var(--paper);font-weight:700;border-left:2px solid var(--c);background:rgba(255,255,255,.05);padding:6px 12px 6px 26px;margin:9px 0;border-radius:0 3px 3px 0}
+  @supports (background:color-mix(in srgb,red,blue)){ .pbody li.key{background:color-mix(in srgb,var(--c) 13%,transparent)} }
+  .pbody li.key::before{content:"▶";left:10px;top:7px;font-size:11px}
 
   /* ===== intel cards ===== */
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -407,7 +410,7 @@
           <h3 class="ptitle"><span class="pdot"></span>国内攪乱工作 <span class="psrc">状況 ①–④</span></h3>
           <ul>
             <li>6月初旬、千葉・茨城で大規模な電波障害。政府は衛星への外部干渉を疑い、長期化の恐れと発表。</li>
-            <li>東証で株の大量誤発注。意図的な株価操作の形跡があり、システムダウン・市場混乱。当局はサイバー攻撃と判断。</li>
+            <li class="key">東証で株の大量誤発注。意図的な株価操作の形跡があり、システムダウン・市場混乱。当局はサイバー攻撃と判断。</li>
             <li>成田空港の管制システムに大規模障害。空港運用が停止し、便の遅延・欠航が相次ぐ。</li>
             <li>在日東亜連邦国人による破壊工作・情報漏洩が全国的に頻発。関係機関は「組織的な撹乱工作」と見て警戒。</li>
           </ul>
@@ -424,7 +427,7 @@
           <h3 class="ptitle"><span class="pdot"></span>千葉・茨城の混乱と大木島の異変 <span class="psrc">状況 ⑤・⑤-1</span></h3>
           <ul>
             <li>器物破損・不審火・交通妨害が相次ぎ、千葉・茨城は強い警戒態勢に。</li>
-            <li>千葉県沖50kmの観光離島〈大木島〉周辺で不審船が急増。武装した漁民らしき集団の活動が活発化。</li>
+            <li class="key">千葉県沖50kmの観光離島〈大木島〉周辺で不審船が急増。武装した漁民らしき集団の活動が活発化。</li>
           </ul>
           <div class="pphotos">
             <figure class="pphoto"><img src="images/p02-alert.jpg" loading="lazy" alt="器物破損・不審火・交通妨害が相次ぎ、警戒態勢を強める警察"><figcaption>千葉・茨城 警戒態勢 / 状況⑤</figcaption></figure>
@@ -438,7 +441,7 @@
           <h3 class="ptitle"><span class="pdot"></span>大木島占拠の発覚 <span class="psrc">状況 ⑥・⑦</span></h3>
           <ul>
             <li>真夜中、黒い服装の武装集団が島に上陸。通信施設・港湾施設・発電所などの重要インフラを占拠。</li>
-            <li>残っていた島民・観光客の一部を人質に取り、島全体の支配を宣言。</li>
+            <li class="key">残っていた島民・観光客の一部を人質に取り、島全体の支配を宣言。</li>
             <li>避難者の証言から、武装集団は東亜連邦特殊部隊とみられる約15名規模の部隊と判明。</li>
           </ul>
           <div class="pphotos">
@@ -455,7 +458,7 @@
             <li>占拠から数日。電波妨害は継続し、通信は極めて不安定。</li>
             <li>敵は重要施設周辺に防御陣地を構築。施設に爆破装置を仕掛けている可能性が高い。</li>
             <li>島内に残された民間人は数名程度と推定。早期の救出・奪還が強く求められる。</li>
-            <li>政府は侵略・切迫を鑑み、武力攻撃事態と認定し、防衛出動を閣議決定。</li>
+            <li class="key">政府は侵略・切迫を鑑み、武力攻撃事態と認定し、防衛出動を閣議決定。</li>
           </ul>
           <div class="pphotos two">
             <figure class="pphoto"><img src="images/p04-entrench.jpg" loading="lazy" alt="重要施設周辺に防御陣地を構築し、爆破装置の設置も疑われる敵部隊"><figcaption>敵の防御陣地・爆破装置の脅威 / 状況⑧</figcaption></figure>
@@ -472,7 +475,7 @@
             <li>防衛省は統合任務部隊を編成。第36戦闘団主力（1個中隊基幹）を奪還部隊の中核として投入。</li>
             <li>第36戦闘団は 6月27日、大木島海岸へ上陸を開始する見積り。</li>
             <li>複数の護衛艦・航空支援部隊が島周辺に展開中。ただし島内の敵の規模・配置は依然不透明。</li>
-            <li>上層部は「作戦は計画に従い進行」とするが、今後の展開は予断を許さない。</li>
+            <li class="key">上層部は「作戦は計画に従い進行」とするが、今後の展開は予断を許さない。</li>
           </ul>
           <div class="pphotos">
             <figure class="pphoto"><img src="images/p05-landing.jpg" loading="lazy" alt="第36戦闘団が大木島海岸へ上陸を開始（揚陸・上陸作戦）"><figcaption>第36戦闘団 大木島海岸へ上陸 / 状況⑨</figcaption></figure>
