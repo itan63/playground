@@ -270,10 +270,10 @@
 
   /* === 06 Time Schedule : time-rail === */
   .sched-rail{list-style:none;margin:18px 0 0;padding:0;position:relative}
-  .sched-rail::before{content:"";position:absolute;left:54px;top:8px;bottom:8px;width:2px;background:var(--line)}
-  .sched-row{display:grid;grid-template-columns:64px 1fr;align-items:start;column-gap:18px;position:relative;padding:9px 0}
+  .sched-rail::before{content:"";position:absolute;left:65px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .sched-row{display:grid;grid-template-columns:50px 1fr;align-items:start;column-gap:30px;position:relative;padding:9px 0}
   .sched-time{font-family:var(--mono);font-size:1.05rem;color:var(--paper);letter-spacing:1px;text-align:right;padding-top:1px}
-  .sched-dot{position:absolute;left:48px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
+  .sched-dot{position:absolute;left:58px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
   .sched-mark .sched-dot,.sched-break .sched-dot{border-color:var(--olive);border-color:var(--c,var(--olive))}
   @supports (background:color-mix(in srgb,red,blue)){
     .sched-mark .sched-dot,.sched-break .sched-dot{box-shadow:0 0 0 4px color-mix(in srgb,var(--c,var(--olive)) 22%,transparent)}
