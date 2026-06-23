@@ -98,6 +98,14 @@
   .metarow dd{margin:0;font-size:15px;color:var(--paper)}
   .metarow dd.hot{color:#e9836f;font-weight:700}
 
+  /* ===== hero mission summary ===== */
+  .mbrief{margin-top:24px;border:1px solid var(--line);border-left:4px solid var(--amber);background:var(--panel);padding:16px 20px 6px}
+  .mbrief .mtag{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--amber);text-transform:uppercase;margin-bottom:8px}
+  .mobj{display:flex;gap:14px;align-items:baseline;padding:10px 0;border-top:1px dashed var(--line-soft)}
+  .mobj .mno{font-family:var(--disp);font-weight:700;font-size:22px;min-width:28px;text-align:center;color:var(--c,var(--amber));line-height:1}
+  .mobj .mtxt{font-family:var(--jp);font-weight:700;font-size:16px;line-height:1.5}
+  .mobj .msub{display:block;font-weight:400;font-size:12.5px;color:var(--muted);font-family:var(--mono);margin-top:2px;letter-spacing:.02em}
+
   /* ===== section scaffold ===== */
   section{padding:42px 0;border-bottom:1px solid var(--line-soft)}
   .sechead{
@@ -334,6 +342,12 @@
     <p class="eyebrow">Operations Order // 島嶼奪還作戦</p>
     <h1 class="opname">JFM<b>4</b></h1>
     <p class="opsub">大木島 奪還作戦 ── ブリーフィング</p>
+    <div class="mbrief reveal">
+      <div class="mtag">Mission // 任務 ── 我が任務は3つ</div>
+      <div class="mobj" style="--c:var(--red)"><span class="mno">01</span><div class="mtxt">敵を撃滅<span class="msub">東亜連邦特殊部隊（約15名）</span></div></div>
+      <div class="mobj" style="--c:var(--amber)"><span class="mno">02</span><div class="mtxt">重要インフラを奪還<span class="msub">通信・港湾・発電 ── 爆破される前に確保</span></div></div>
+      <div class="mobj" style="--c:var(--olive)"><span class="mno">03</span><div class="mtxt">民間人を救出・保護<span class="msub">島内に取り残された人質</span></div></div>
+    </div>
     <dl class="metarow">
       <div><dt>Operation</dt><dd>島嶼奪還</dd></div>
       <div><dt>AO / 作戦地域</dt><dd>大木島</dd></div>
