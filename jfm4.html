@@ -290,10 +290,13 @@
   .sched-day:first-of-type{margin-top:10px}
   .sched-day + .sched-rail{margin-top:6px}
   .sched-2col{display:grid;grid-template-columns:1fr .82fr;gap:30px;align-items:start;margin-top:6px}
-  .sched-src .src-doc{margin:6px 0 0;border:1px solid var(--line);background:#0d0f0a;padding:8px;line-height:0}
-  .sched-src .src-doc img{width:100%;height:auto;display:block;cursor:zoom-in}
-  .sched-src .src-doc figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;padding:8px 4px 2px;line-height:1.6}
+  .src-doc{margin:6px 0 0;border:1px solid var(--line);background:#0d0f0a;padding:8px;line-height:0}
+  .src-doc img{width:100%;height:auto;display:block;cursor:zoom-in}
+  .src-doc figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;padding:8px 4px 2px;line-height:1.6}
+  .src-doc figcaption b{font-family:var(--jp);font-weight:700}
   .sched-src .note{margin-top:14px}
+  .radio-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){ .radio-grid{grid-template-columns:1fr} }
   .sched-row{display:grid;grid-template-columns:96px 1fr;align-items:start;column-gap:26px;position:relative;padding:9px 0}
   .sched-time{font-family:var(--mono);font-size:.9rem;color:var(--paper);letter-spacing:.5px;text-align:right;padding-top:2px}
   .sched-dot{position:absolute;left:102px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--panel2);border:2px solid var(--olive);box-sizing:border-box}
@@ -819,6 +822,30 @@
     </div>
 
     <p class="note reveal">※ここでの「HP」はホームページ（＝サバゲーパラダイス公式サイト）を指します。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sechead">
+      <span class="secnum">08</span>
+      <h2 class="sectitle">Radio Network<span class="jp">無線網図（状況戦）</span></h2>
+    </div>
+    <div class="radio-grid reveal">
+      <figure class="src-doc">
+        <a href="images/musen-aka1.jpg" target="_blank" rel="noopener" aria-label="無線網図 赤1中隊 を別タブで原寸表示">
+          <img src="images/musen-aka1.jpg" loading="lazy" alt="無線網図（状況戦 赤1中隊）。中隊本部10ヒトマル2ch、1小隊11ヒトヒト3ch・2小隊12ヒトニイ4ch・3小隊13ヒトサン5ch、大隊本部00マルマル1ch、護衛艦フォーチューンインスペクター1ch、統裁系トウサイ9/15ch（傍受禁止）">
+        </a>
+        <figcaption><b style="color:#e9836f">赤 / 第1中隊</b> 無線網図 ── クリックで原寸</figcaption>
+      </figure>
+      <figure class="src-doc">
+        <a href="images/musen-ao1.jpg" target="_blank" rel="noopener" aria-label="無線網図 青2中隊 を別タブで原寸表示">
+          <img src="images/musen-ao1.jpg" loading="lazy" alt="無線網図（状況戦 青2中隊）。中隊本部20ニイマル2ch、1小隊21ニイヒト3ch・2小隊22ニイニイ4ch・3小隊23ニイサン5ch、大隊本部00マルマル1ch、護衛艦1ch、統裁系トウサイ9/15ch（傍受禁止）">
+        </a>
+        <figcaption><b style="color:#8fc0e0">青 / 第2中隊</b> 無線網図 ── クリックで原寸</figcaption>
+      </figure>
+    </div>
+    <p class="note reveal">※チャンネルは Kenwood 基準（他社は互換ch・周波数を使用）。統裁系「トウサイ」9ch / 15ch は傍受禁止。<br>各隊長は無線を活用し指揮下部隊を確実に掌握。PTT 押しっぱなしによる混信は厳禁。</p>
   </div>
 </section>
 
