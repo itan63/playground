@@ -315,8 +315,22 @@
   .sched-break .sched-title{color:var(--blue)}
   .sched-mark .sched-title{color:var(--paper);color:var(--c,var(--paper))}
 
-  /* === 07 Rules of Engagement === */
+  /* === 07 Regulations === */
   .roe-list li{line-height:1.55}
+  /* === 08 ROE & legal background === */
+  .roe-c{display:grid;gap:11px;margin-top:4px;font-size:15px;color:#dad8c8}
+  .summary .roe-c b{color:var(--amber);border-bottom:none}
+  .legal{border:1px solid var(--line);border-left:4px solid var(--olive);background:var(--panel);margin-top:6px}
+  .legal>summary{list-style:none;cursor:pointer;padding:14px 18px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;color:var(--paper);font-weight:700;display:flex;align-items:center;gap:10px}
+  .legal>summary::-webkit-details-marker{display:none}
+  .legal>summary::before{content:"▶";color:var(--amber);font-size:11px}
+  .legal[open]>summary::before{content:"▼"}
+  .legal .legal-body{padding:2px 20px 20px;border-top:1px solid var(--line-soft)}
+  .legal h4{font-family:var(--disp);font-weight:600;font-size:16px;color:var(--paper);margin:18px 0 6px;letter-spacing:.02em}
+  .legal ul{margin:4px 0 0;padding-left:18px}
+  .legal li{font-size:13.5px;color:#cfcdbe;line-height:1.85;margin-bottom:5px}
+  .legal p{font-size:13.5px;color:#cfcdbe;line-height:1.85;margin:0}
+  .legal b{color:var(--paper)}
 
   /* === timeline phase photos === */
   .pphotos{display:grid;gap:10px;margin-top:14px}
@@ -819,7 +833,7 @@
   <div class="wrap">
     <div class="sechead">
       <span class="secnum">07</span>
-      <h2 class="sectitle">Rules of Engagement<span class="jp">レギュレーション</span></h2>
+      <h2 class="sectitle">Regulations<span class="jp">レギュレーション</span></h2>
     </div>
 
     <ul class="tips roe-list reveal">
@@ -836,6 +850,78 @@
     </div>
 
     <p class="note reveal">※ここでの「HP」はホームページ（＝サバゲーパラダイス公式サイト）を指します。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sechead">
+      <span class="secnum">08</span>
+      <h2 class="sectitle">Rules of Engagement<span class="jp">交戦規定 ＆ 法的背景</span></h2>
+    </div>
+
+    <div class="summary reveal">
+      <span class="tag">ROE / 状況戦の心得</span>
+      <div class="roe-c">
+        <div><b>区別</b>　文民と戦闘員を区別する。「島民らしき人物」は確認なしに撃たない。</div>
+        <div><b>背信行為は反則</b>　文民を装った攻撃は国際法上の背信行為（perfidy）。武装漁民・偽装に注意。</div>
+        <div><b>人質・投降</b>　人質と投降者の安全確保を最優先（任務③に直結）。</div>
+        <div><b>原則</b>　疑わしきは撃たず ── 確認・警告・必要最小限・比例。</div>
+      </div>
+    </div>
+
+    <div class="subhead">Legal Background <span class="jp">法的背景</span></div>
+    <p style="font-size:14px;color:#cfcdbe;margin:0 0 10px">この作戦は実在の制度を下敷きにしたフィクションです。気になる方向けに、法的根拠を畳んでおきます（クリックで展開）。</p>
+    <details class="legal">
+      <summary>法的根拠を詳しく読む ── 自衛隊法・国民保護法・国際人道法</summary>
+      <div class="legal-body">
+        <h4>0. どの「出動」にあたるか ── 事態のエスカレーション</h4>
+        <ul>
+          <li>平時〜グレーゾーン（不審船・工作）：警察・海上保安庁が主。不審船には <b>海上警備行動（自衛隊法82条）</b>。</li>
+          <li><b>治安出動（78条／81条）</b>：間接侵略・大規模騒擾で、警察力では治安維持ができない時。</li>
+          <li><b>防衛出動（76条）</b>：外国＝<b>国家</b>による武力攻撃＝武力攻撃事態。</li>
+          <li>→ 本作戦は ①②（不審船・武装漁民）の段階では海保・警察／海上警備行動の領域。だが <b>国家の特殊部隊による占拠</b>と判明し、<b>武力攻撃事態＝防衛出動</b>へ移行した。</li>
+        </ul>
+        <h4>A. 事態の認定と防衛出動 ── 敵を排除する権限</h4>
+        <ul>
+          <li>政府が <b>「武力攻撃事態」と認定</b>（武力攻撃事態対処法）。</li>
+          <li>内閣総理大臣が対処基本方針を閣議決定し、<b>防衛出動を命令（自衛隊法76条）</b>。原則 <b>事前に国会の承認</b>（緊急時は事後）。</li>
+          <li>防衛出動下では <b>必要な武力を行使できる（88条）</b>。</li>
+          <li>なぜ「武力攻撃事態」か：日本の領土が直接攻撃された＝<b>個別的自衛権</b>。他国への攻撃で日本の存立が脅かされる「存立危機事態（集団的自衛権）」とは別カテゴリ。</li>
+          <li>武力の行使の要件（武力攻撃事態の場合）：①我が国に対する武力攻撃の発生 ②排除に他の適当な手段がない ③必要最小限度。<b>※現行の「新三要件」では第一要件に存立危機事態も含む（選択的）。</b></li>
+        </ul>
+        <h4>B. 島民の保護 ── 主体は「自治体・国」</h4>
+        <ul>
+          <li>住民を避難・救援させるのは <b>行政（自治体・国）が主体</b>。根拠は <b>国民保護法</b>。</li>
+          <li><b>内閣総理大臣（国の対策本部長）</b>：避難措置の指示（総務大臣を経由して知事へ）。</li>
+          <li><b>都道府県知事</b>：住民への <b>避難の指示</b>、救援（収容・食料・医療）の実施、避難施設の指定。</li>
+          <li><b>市町村長</b>：避難住民の <b>誘導</b>、警報の伝達、避難実施要領の策定。</li>
+          <li>武力攻撃の警報は 国→都道府県→市町村 へ伝達され住民へ。大規模テロ等（緊急対処事態）も同じ国民保護法の体系で対処。</li>
+        </ul>
+        <h4>C. 自衛隊はどう関わるか ── 「支援」</h4>
+        <ul>
+          <li>本来任務は <b>敵（武力攻撃）の排除</b>（防衛出動）。</li>
+          <li>住民保護には <b>国民保護等派遣（77条の4）</b> で 避難誘導・救援・武力攻撃災害への対処を <b>支援</b>。</li>
+          <li>防衛出動時の武力の行使は88条。出動時の公共の秩序維持のための権限（武器の使用を含む）は <b>第92条</b> が治安出動時の規定（89〜91条）を準用して定める（90条は治安出動時の武器使用の規定）。</li>
+          <li>海外の邦人を救う <b>在外邦人等の保護措置（84条の3）</b> は国外用。今回は国内（大木島）なので非該当。</li>
+        </ul>
+        <h4>D. 捕らえた敵・戦闘外の者の取扱い</h4>
+        <ul>
+          <li>拘束した敵戦闘員は <b>捕虜取扱い法</b> に基づき処遇。</li>
+          <li>投降者・負傷者など戦う能力を失った者（戦闘外）は攻撃してはならない（第一追加議定書41条）。傷病者の保護はジュネーブ第一条約。</li>
+        </ul>
+        <h4>E. 交戦規定（ROE）の法的根拠</h4>
+        <ul>
+          <li><b>区別原則</b>（第一追加議定書48条）：文民と戦闘員を区別。</li>
+          <li><b>背信行為（perfidy）</b>（同37条）：文民を装った攻撃・捕獲は違法・戦争犯罪＝「島民に扮した敵」。</li>
+          <li><b>文民の直接参加</b>（同51条3項）：参加中は保護を失う＝「武装漁民」。文民を装った戦闘員は捕虜資格を失う可能性。</li>
+          <li>病院・医療施設・文化財などへの攻撃は原則禁止。</li>
+        </ul>
+        <h4>本作戦における含意</h4>
+        <p>島が占拠され人質がいるため、純粋な「避難誘導」ではなく <b>敵の制圧と住民救出が重なる</b>。軍事作戦（自衛隊）と住民保護（自治体）が同時並行 ── これが任務③（民間人の救出・保護）の重み。</p>
+        <p style="color:var(--muted);font-size:12px;margin-top:14px">※実在の制度を参考にしたフィクションです。現実の運用・解釈とは異なります。</p>
+      </div>
+    </details>
   </div>
 </section>
 
