@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大木島奪還作戦 ／ 特設 ── JFM4 OPERATIONAL BRIEFING</title>
+<meta name="description" content="自衛隊装備オンリーサバゲー JFM04 Rising Edition「大木島奪還作戦」作戦概要。政府／自衛隊テロップ調の特設ページ。主催: 飛龍堂 @HIRYU_TACTICS #JFM4">
+<link rel="icon" type="image/jpeg" href="jfm4-emblem.jpg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="大木島奪還作戦 ／ 特設（JFM4）">
+<meta property="og:description" content="自衛隊装備オンリーサバゲー JFM04 Rising Edition。武力攻撃事態 認定 ── 防衛出動 発令。状況付与①〜⑨を統合。主催: 飛龍堂 @HIRYU_TACTICS #JFM4">
+<meta property="og:url" content="https://itan63.github.io/playground/jfm4-shingoji.html">
+<meta property="og:image" content="https://itan63.github.io/playground/jfm4-emblem.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大木島奪還作戦 ／ 特設（JFM4）">
+<meta name="twitter:description" content="武力攻撃事態 認定 ── 防衛出動 発令。状況付与①〜⑨を統合。#JFM4">
+<meta name="twitter:image" content="https://itan63.github.io/playground/jfm4-emblem.jpg">
+<meta name="twitter:site" content="@HIRYU_TACTICS">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a; --bg2:#121212; --paper:#f4f1ea; --ink:#0f0f0f;
+    --white:#ffffff; --red:#d70c18; --gray:#9a9a9a; --gray2:#6f6f6f;
+    --line:#262626; --line2:#37373a;
+    --mincho:'Shippori Mincho B1','Noto Serif JP',serif;
+    --gothic:'Noto Sans JP',sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:#e9e9e9;font-family:var(--gothic);line-height:1.85;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  img{max-width:100%}
+  a{color:inherit}
+
+  /* classbar */
+  .classbar{background:#000;border-bottom:2px solid var(--red);font-family:var(--gothic);font-size:11px;font-weight:700;letter-spacing:.34em;color:var(--red);padding:9px 0;text-align:center}
+  .classbar span{color:#777;letter-spacing:.2em;font-weight:400}
+
+  /* hero */
+  .hero{background:#000;padding:44px 0 30px;border-bottom:3px solid var(--red)}
+  .eyebrow{font-family:var(--gothic);font-size:12px;letter-spacing:.3em;color:var(--gray);font-weight:500;margin:0 0 16px}
+  .emblem{width:120px;height:auto;border-radius:50%;border:1px solid var(--line2);margin:0 0 18px;display:block}
+  .opname{font-family:var(--mincho);font-weight:800;color:var(--white);font-size:clamp(46px,11vw,98px);line-height:1.02;letter-spacing:.03em;margin:0}
+  .opname b{color:var(--red)}
+  .opsub{font-family:var(--mincho);font-weight:700;color:#d8d8d8;font-size:clamp(17px,3.4vw,26px);margin:14px 0 0;letter-spacing:.04em}
+  .rrule{height:3px;width:110px;background:var(--red);margin:18px 0 12px}
+  .romaji{font-family:var(--gothic);font-size:12px;letter-spacing:.2em;color:var(--gray2)}
+
+  /* mission band (red full bleed) */
+  .alert{background:var(--red);color:#fff}
+  .alert .wrap{padding:18px 24px}
+  .alert .a-main{font-family:var(--mincho);font-weight:800;font-size:clamp(24px,5.4vw,40px);letter-spacing:.08em;margin:0}
+  .alert .a-sub{font-family:var(--gothic);font-weight:700;font-size:13px;letter-spacing:.14em;margin:6px 0 0;opacity:.92}
+
+  /* mission 3 lines */
+  .mbox{background:#000;border-top:1px solid var(--line)}
+  .mbox .wrap{padding:26px 24px}
+  .mlabel{font-family:var(--gothic);font-size:11px;letter-spacing:.26em;color:var(--red);font-weight:700;margin:0 0 12px}
+  .mobj{display:flex;gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
+  .mobj:first-of-type{border-top:none}
+  .mno{font-family:var(--mincho);font-weight:800;font-size:30px;color:var(--red);min-width:40px;line-height:1}
+  .mtxt{font-family:var(--mincho);font-weight:700;font-size:clamp(17px,3vw,21px);color:#fff;line-height:1.4}
+  .mtxt small{display:block;font-family:var(--gothic);font-weight:400;font-size:12.5px;color:var(--gray);margin-top:3px;letter-spacing:.02em}
+
+  /* sections */
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  section.paper{background:var(--paper);color:var(--ink)}
+  .sec-head{display:flex;align-items:center;gap:16px;margin:0 0 26px;flex-wrap:wrap}
+  .sec-no{font-family:var(--mincho);font-weight:800;font-size:20px;background:var(--red);color:#fff;padding:3px 13px;letter-spacing:.1em}
+  .sec-title{font-family:var(--mincho);font-weight:800;font-size:clamp(26px,5vw,40px);margin:0;letter-spacing:.04em}
+  .sec-title .en{display:block;font-family:var(--gothic);font-weight:500;font-size:12px;letter-spacing:.22em;color:var(--gray2);margin-top:5px}
+  section.paper .sec-title .en{color:#7a756a}
+
+  /* situation */
+  .situation{border-left:4px solid var(--red);background:#000;padding:22px 24px;font-size:16px;font-family:var(--gothic)}
+  section.paper .situation{background:#fff}
+  .situation b{font-weight:700;border-bottom:2px solid var(--red);padding-bottom:1px}
+  .tag{font-family:var(--gothic);font-size:11px;letter-spacing:.24em;color:var(--red);font-weight:700;display:block;margin-bottom:10px}
+
+  /* map */
+  .maprow{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin-top:26px}
+  .mapcard{border:1px solid #cfcabd;background:#fff;padding:10px}
+  .mapcard svg{display:block;width:100%;height:auto}
+  .maplegend{font-family:var(--gothic);font-size:13px;line-height:2.1;color:#5a564c}
+  .maplegend .k{display:inline-block;width:11px;height:11px;margin-right:9px;vertical-align:middle}
+  .maplegend b{font-weight:700;color:var(--ink)}
+
+  /* shot (photo / document frame) */
+  .shots{display:grid;gap:12px;margin-top:16px}
+  .shots.two{grid-template-columns:1fr 1fr}
+  .shot{margin:0;border:1px solid var(--line2);background:#000;padding:7px;line-height:0}
+  section.paper .shot{border-color:#cfcabd;background:#fff}
+  .shot img{width:100%;height:auto;display:block}
+  .shot.crop img{aspect-ratio:3/2;object-fit:cover}
+  .shot figcaption{font-family:var(--gothic);font-size:10px;letter-spacing:.14em;color:var(--gray);text-transform:uppercase;padding:8px 4px 2px;line-height:1.6}
+  section.paper .shot figcaption{color:#7a756a}
+
+  /* timeline */
+  .ph{display:grid;grid-template-columns:96px 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line)}
+  .ph:first-child{border-top:none}
+  .ph-no{font-family:var(--mincho);font-weight:800;font-size:46px;line-height:1;color:var(--red)}
+  .ph-lv{font-family:var(--gothic);font-size:11px;letter-spacing:.18em;color:var(--gray);margin-top:8px}
+  .ph-title{font-family:var(--mincho);font-weight:800;font-size:21px;margin:0 0 8px;color:#fff;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+  .ph-src{font-family:var(--gothic);font-size:11px;color:#fff;background:var(--red);padding:2px 8px;letter-spacing:.08em;font-weight:700}
+  .ph ul{margin:0;padding:0;list-style:none}
+  .ph li{position:relative;padding-left:18px;margin-bottom:7px;color:#cfcfcf;font-size:14.5px}
+  .ph li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--red)}
+  .ph li.key{color:#fff;font-weight:700;background:rgba(215,16,24,.14);border-left:3px solid var(--red);padding:7px 12px 7px 16px;margin:8px 0}
+  .ph li.key::before{display:none}
+
+  /* intel cards */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .card{background:#fff;border-top:4px solid var(--ink);padding:20px}
+  .card.enemy{border-top-color:var(--red)}
+  .card.friendly{border-top-color:#111}
+  .card h3{font-family:var(--gothic);font-size:11px;letter-spacing:.18em;color:#7a756a;margin:0 0 12px;font-weight:700}
+  .card .big{font-family:var(--mincho);font-weight:800;font-size:22px;margin:0 0 10px;color:var(--ink)}
+  .card .big.red{color:var(--red)}
+  .card dt{font-family:var(--gothic);font-size:11px;color:#8a8579;margin-top:9px;font-weight:700;letter-spacing:.08em}
+  .card dd{margin:2px 0 0;font-size:13.5px;color:#222}
+
+  /* data rows / metarow */
+  .metarow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);margin-top:22px}
+  .metarow div{background:#000;padding:13px 16px}
+  section.paper .metarow{background:#cfcabd;border-color:#cfcabd}
+  section.paper .metarow div{background:#fff}
+  .metarow dt{font-family:var(--gothic);font-size:10.5px;letter-spacing:.18em;color:var(--gray);text-transform:uppercase;margin:0 0 4px;font-weight:700}
+  section.paper .metarow dt{color:#8a8579}
+  .metarow dd{margin:0;font-family:var(--mincho);font-weight:700;font-size:17px;color:#fff}
+  section.paper .metarow dd{color:var(--ink)}
+  .metarow dd.hot{color:var(--red)}
+
+  .note{font-family:var(--gothic);font-size:12.5px;color:var(--gray);border-top:1px solid var(--line);padding-top:12px;margin-top:16px;line-height:1.8}
+  section.paper .note{color:#7a756a;border-top-color:#cfcabd}
+  .note b{color:#ddd}
+  section.paper .note b{color:var(--ink)}
+
+  /* mission objectives (paper) */
+  .obj{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:18px 0;border-bottom:1px dashed #c9c4b7}
+  .obj:last-child{border-bottom:none}
+  .objno{font-family:var(--mincho);font-weight:800;font-size:30px;color:#fff;background:var(--red);width:56px;height:56px;display:flex;align-items:center;justify-content:center}
+  .objtxt{font-family:var(--mincho);font-weight:700;font-size:19px;color:var(--ink)}
+  .objtxt span{display:block;font-family:var(--gothic);font-weight:400;font-size:12px;color:#8a8579;margin-top:3px;letter-spacing:.08em}
+
+  /* subhead */
+  .subhead{font-family:var(--gothic);font-size:12px;letter-spacing:.2em;color:var(--red);font-weight:700;margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+  .subhead:first-of-type{margin-top:0}
+  .subhead .jp{color:var(--gray);font-weight:500}
+  section.paper .subhead .jp{color:#7a756a}
+
+  /* task org */
+  .taskorg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .team{background:#000;border-top:4px solid var(--tc);padding:22px}
+  section.paper .team{background:#fff}
+  .team .force{font-family:var(--gothic);font-size:11px;letter-spacing:.2em;color:var(--tc);font-weight:700;margin:0 0 10px}
+  .team .unit{font-family:var(--mincho);font-weight:800;font-size:30px;margin:0;color:#fff}
+  section.paper .team .unit{color:var(--ink)}
+  .team .desc{margin:8px 0 0;font-size:14px;color:#bdbdbd;min-height:3.4em}
+  section.paper .team .desc{color:#444}
+  .plabel{font-family:var(--gothic);font-size:10.5px;letter-spacing:.18em;color:var(--gray2);text-transform:uppercase;margin:14px 0 7px;font-weight:700}
+  .platoons{display:flex;flex-wrap:wrap;gap:8px}
+  .platoons span{font-family:var(--gothic);font-size:12.5px;color:#fff;border:1px solid var(--tc);background:rgba(255,255,255,.06);padding:4px 11px}
+  section.paper .platoons span{color:var(--ink);background:rgba(0,0,0,.04)}
+
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .svc-card{background:#000;padding:22px}
+  section.paper .svc-card{background:#fff}
+  .svc-card h4{font-family:var(--gothic);font-size:11px;letter-spacing:.16em;color:var(--gray2);margin:0 0 14px;font-weight:700;text-transform:uppercase}
+  .svc-card p{margin:0 0 10px;font-size:14px;color:#cfcfcf}
+  section.paper .svc-card p{color:#333}
+  .svc-card p:last-child{margin-bottom:0}
+
+  .spirit{border-left:4px solid var(--red);background:#000;padding:24px}
+  section.paper .spirit{background:#fff}
+  .spirit p{margin:0;font-size:15.5px;color:#ddd}
+  section.paper .spirit p{color:#222}
+  .spirit .punch{font-family:var(--mincho);font-weight:800;font-size:20px;color:#fff;margin-top:12px}
+  section.paper .spirit .punch{color:var(--ink)}
+
+  /* schedule */
+  .sched-2col{display:grid;grid-template-columns:1fr .82fr;gap:30px;align-items:start;margin-top:8px}
+  .sched-day{font-family:var(--gothic);font-size:12px;letter-spacing:.2em;color:var(--red);font-weight:700;text-transform:uppercase;margin:20px 0 6px;padding-top:12px;border-top:1px solid #c9c4b7}
+  .sched-day:first-of-type{margin-top:6px}
+  .srail{list-style:none;margin:0;padding:0;position:relative}
+  .srail::before{content:"";position:absolute;left:96px;top:8px;bottom:8px;width:2px;background:#cfcabd}
+  .srow{display:grid;grid-template-columns:84px 1fr;column-gap:26px;align-items:start;padding:8px 0;position:relative}
+  .stime{font-family:var(--gothic);font-size:13px;color:var(--ink);text-align:right;font-weight:700;padding-top:2px}
+  .sdot{position:absolute;left:90px;top:11px;width:13px;height:13px;border-radius:50%;background:#fff;border:2px solid #b9b3a4}
+  .srow.mk .sdot{border-color:var(--red)}
+  .srow.bk .sdot{border-color:#1f6f9e}
+  .stitle{font-family:var(--mincho);font-weight:700;font-size:15.5px;color:var(--ink)}
+  .sflag{font-family:var(--gothic);font-size:11px;font-weight:700;padding:1px 8px;margin-right:8px;color:#fff}
+  .sflag.r{background:var(--red)} .sflag.b{background:#1f6f9e} .sflag.k{background:#111}
+  .srow.bk{background:#e7e2d4}
+
+  footer{background:#000;padding:40px 0 56px;text-align:center;font-family:var(--gothic)}
+  footer .ttl{font-family:var(--mincho);font-weight:800;font-size:22px;color:#fff;letter-spacing:.06em}
+  footer .org{margin-top:14px;font-size:13px;color:var(--gray)}
+  footer .org a{color:var(--red);text-decoration:none}
+  footer .tag2{margin-top:8px;color:var(--red);font-weight:700;letter-spacing:.28em}
+  footer .end{display:block;font-family:var(--mincho);font-weight:800;color:var(--red);font-size:30px;letter-spacing:.4em;margin-top:18px}
+  footer .unof{margin-top:18px;font-size:11px;color:var(--gray2);letter-spacing:.06em;line-height:1.8}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:760px){
+    .maprow,.grid3,.taskorg,.svc,.sched-2col,.shots.two{grid-template-columns:1fr}
+    .ph{grid-template-columns:64px 1fr;gap:16px}
+    .ph-no{font-size:34px}
+    .srow{grid-template-columns:1fr;column-gap:0;padding:10px 0 10px 26px}
+    .stime{text-align:left}
+    .srail::before{left:5px}
+    .sdot{left:0;top:15px}
+  }
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="classbar">大木島奪還作戦 特設 <span>// UNCLASSIFIED — FOR EXERCISE USE ONLY</span></div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">内閣官房 ／ 防衛省・統合幕僚監部 ── 作戦概要</p>
+    <img class="emblem" src="jfm4-emblem.jpg" width="120" height="118" alt="JFM4 公式エンブレム">
+    <h1 class="opname">大木島<b>奪還</b>作戦</h1>
+    <p class="opsub">自衛隊装備オンリーサバゲー ── JFM04 Rising Edition</p>
+    <div class="rrule"></div>
+    <p class="romaji">OPERATION ŌKIJIMA RECAPTURE ／ ＪＦＭ０４ ／ Ｈ−Ｄａｙ 六月二十七日</p>
+  </div>
+</header>
+
+<div class="alert">
+  <div class="wrap">
+    <p class="a-main">武力攻撃事態　認定</p>
+    <p class="a-sub">国会承認を経て 防衛出動 発令 ── 第３６戦闘団を投入</p>
+  </div>
+</div>
+
+<div class="mbox">
+  <div class="wrap">
+    <p class="mlabel">MISSION ／ 任務 ── 我が任務は三つ</p>
+    <div class="mobj"><span class="mno">01</span><span class="mtxt">敵を撃滅<small>東亜連邦特殊部隊（約１５名）</small></span></div>
+    <div class="mobj"><span class="mno">02</span><span class="mtxt">重要インフラを奪還<small>通信・港湾・発電 ── 爆破される前に確保</small></span></div>
+    <div class="mobj"><span class="mno">03</span><span class="mtxt">民間人を救出・保護<small>島内に取り残された人質</small></span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="situation reveal">
+      <span class="tag">SITUATION SUMMARY ／ 全体像</span>
+      <b>東亜連邦（敵対国）による日本への攪乱工作</b> から始まり、千葉沖の離島〈大木島〉が <b>武力占拠</b> される。政府は武力攻撃事態と認定し防衛出動を発令。プレイヤー部隊である <b>第36戦闘団</b> は、大木島奪還作戦の中核として 6月27日に大木島へ上陸する。
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０１</span><h2 class="sec-title">事態の推移<span class="en">PHASE TIMELINE ①→⑨</span></h2></div>
+
+    <div class="ph reveal">
+      <div><div class="ph-no">01</div><div class="ph-lv">兆候</div></div>
+      <div>
+        <h3 class="ph-title">国内攪乱工作 <span class="ph-src">状況 ①–④</span></h3>
+        <ul>
+          <li>6月初旬、千葉・茨城で大規模な電波障害。政府は衛星への外部干渉を疑い、長期化の恐れと発表。</li>
+          <li class="key">東証で株の大量誤発注。意図的な株価操作の形跡があり、システムダウン・市場混乱。当局はサイバー攻撃と判断。</li>
+          <li>成田空港の管制システムに大規模障害。空港運用が停止し、便の遅延・欠航が相次ぐ。</li>
+          <li>在日東亜連邦国人による破壊工作・情報漏洩が全国的に頻発。関係機関は「組織的な撹乱工作」と見て警戒。</li>
+        </ul>
+        <div class="shots two">
+          <figure class="shot crop"><img src="images/p01-jamming.jpg" loading="lazy" alt="電波障害・通信妨害"><figcaption>電波障害・通信妨害 / 状況①</figcaption></figure>
+          <figure class="shot crop"><img src="images/p01-stock.jpg" loading="lazy" alt="東証 大量誤発注"><figcaption>東証 大量誤発注 / 状況②</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="ph reveal">
+      <div><div class="ph-no">02</div><div class="ph-lv">警戒</div></div>
+      <div>
+        <h3 class="ph-title">千葉・茨城の混乱と大木島の異変 <span class="ph-src">状況 ⑤</span></h3>
+        <ul>
+          <li>器物破損・不審火・交通妨害が相次ぎ、千葉・茨城は強い警戒態勢に。</li>
+          <li class="key">千葉県沖50kmの観光離島〈大木島〉周辺で不審船が急増。武装した漁民らしき集団の活動が活発化。</li>
+        </ul>
+        <div class="shots"><figure class="shot"><img src="images/p02-alert.jpg" loading="lazy" alt="警戒態勢"><figcaption>千葉・茨城 警戒態勢 / 状況⑤</figcaption></figure></div>
+      </div>
+    </div>
+
+    <div class="ph reveal">
+      <div><div class="ph-no">03</div><div class="ph-lv">発覚</div></div>
+      <div>
+        <h3 class="ph-title">大木島占拠の発覚 <span class="ph-src">状況 ⑥・⑦</span></h3>
+        <ul>
+          <li>真夜中、黒い服装の武装集団が島に上陸。通信施設・港湾施設・発電所などの重要インフラを占拠。</li>
+          <li class="key">残っていた島民・観光客の一部を人質に取り、島全体の支配を宣言。</li>
+          <li>避難者の証言から、武装集団は東亜連邦特殊部隊とみられる約15名規模の部隊と判明。</li>
+        </ul>
+        <div class="shots"><figure class="shot"><img src="images/p03-occupation.jpg" loading="lazy" alt="武装集団の上陸・占拠"><figcaption>武装集団の上陸・重要インフラ占拠 / 状況⑥</figcaption></figure></div>
+      </div>
+    </div>
+
+    <div class="ph reveal">
+      <div><div class="ph-no">04</div><div class="ph-lv">事態認定</div></div>
+      <div>
+        <h3 class="ph-title">武力攻撃事態の認定・防衛出動 <span class="ph-src">状況 ⑧</span></h3>
+        <ul>
+          <li>占拠から数日。電波妨害は継続し、通信は極めて不安定。</li>
+          <li>敵は重要施設周辺に防御陣地を構築。施設に爆破装置を仕掛けている可能性が高い。</li>
+          <li>島内に残された民間人は数名程度と推定。早期の救出・奪還が強く求められる。</li>
+          <li class="key">政府は侵略・切迫を鑑み、武力攻撃事態と認定し、防衛出動を閣議決定。</li>
+        </ul>
+        <div class="shots two">
+          <figure class="shot crop"><img src="images/p04-entrench.jpg" loading="lazy" alt="敵の防御陣地"><figcaption>敵の防御陣地・爆破装置の脅威 / 状況⑧</figcaption></figure>
+          <figure class="shot crop"><img src="images/p04-diet.jpg" loading="lazy" alt="国会・防衛出動を閣議決定"><figcaption>武力攻撃事態 認定・防衛出動を閣議決定 / 状況⑧</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="ph reveal">
+      <div><div class="ph-no">05</div><div class="ph-lv">作戦発動</div></div>
+      <div>
+        <h3 class="ph-title">大木島奪還作戦の発動 ＝ 当日 <span class="ph-src">状況 ⑨</span></h3>
+        <ul>
+          <li>防衛省は統合任務部隊を編成。第36戦闘団主力（1個中隊基幹）を奪還部隊の中核として投入。</li>
+          <li>第36戦闘団は 6月27日、大木島海岸へ上陸を開始する見積り。</li>
+          <li>複数の護衛艦・航空支援部隊が島周辺に展開中。ただし島内の敵の規模・配置は依然不透明。</li>
+          <li class="key">上層部は「作戦は計画に従い進行」とするが、今後の展開は予断を許さない。</li>
+        </ul>
+        <div class="shots"><figure class="shot"><img src="images/p05-landing.jpg" loading="lazy" alt="第36戦闘団 上陸"><figcaption>第36戦闘団 大木島海岸へ上陸 / 状況⑨</figcaption></figure></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０２</span><h2 class="sec-title">情勢判断<span class="en">INTELLIGENCE</span></h2></div>
+    <div class="grid3">
+      <div class="card enemy reveal">
+        <h3>ENEMY ／ 敵勢力</h3>
+        <p class="big red">東亜連邦特殊部隊</p>
+        <dl>
+          <dt>規模</dt><dd>約15名</dd>
+          <dt>状況</dt><dd>防御陣地を構築／施設に爆破装置の可能性／電波妨害を継続／民間人を人質</dd>
+        </dl>
+      </div>
+      <div class="card target reveal">
+        <h3>OBJECTIVE AREA ／ 目標地</h3>
+        <p class="big">大木島</p>
+        <dl>
+          <dt>位置</dt><dd>千葉県沖 約50km の観光離島</dd>
+          <dt>占拠施設</dt><dd>通信施設・港湾施設・発電所 等</dd>
+        </dl>
+      </div>
+      <div class="card friendly reveal">
+        <h3>FRIENDLY ／ 我が部隊</h3>
+        <p class="big">第36戦闘団</p>
+        <dl>
+          <dt>編成</dt><dd>主力 ＝ 1個中隊基幹</dd>
+          <dt>上陸</dt><dd>6月27日 大木島海岸</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０３</span><h2 class="sec-title">作戦地域<span class="en">OPERATIONAL AREA</span></h2></div>
+    <div class="shots reveal"><figure class="shot"><a href="images/operational-map.jpg" target="_blank" rel="noopener"><img src="images/operational-map.jpg" loading="lazy" alt="作戦地域マップ。A〜P／1〜25のグリッド、SAFETY AREA・FOB・車両基地・通信施設等"></a><figcaption>作戦地域マップ（座標）── クリックで原寸</figcaption></figure></div>
+    <p class="note">縦が A〜P（行）、横が 1〜25（列）のグリッド。各地点は NATO フォネティックコード（A＝アルファ … Z＝ズールー）で呼称。南側中央が <b>SAFETY AREA</b>、西側の <b>FOB・車両基地</b> が味方後方。</p>
+
+    <div class="subhead">ISLAND PROFILE <span class="jp">／ 大木島の地理的特徴（想定）</span></div>
+    <div class="maprow reveal" style="align-items:start">
+      <div class="mapcard"><figure style="margin:0;line-height:0"><img src="images/island-aerial.jpg" loading="lazy" style="width:100%;height:auto;display:block" alt="大木島の空撮"></figure></div>
+      <dl class="metarow" style="margin-top:0">
+        <div><dt>位置</dt><dd>千葉県銚子沖 約50km</dd></div>
+        <div><dt>面積</dt><dd>約3km²</dd></div>
+        <div><dt>周囲</dt><dd>約11〜12km</dd></div>
+        <div><dt>行政</dt><dd>千葉県大木島村</dd></div>
+        <div><dt>常住人口</dt><dd>約150人</dd></div>
+        <div><dt>産業</dt><dd>漁業＋観光</dd></div>
+      </dl>
+    </div>
+    <p class="note">島の<b>左側</b>に桟橋・港湾施設（大木港）、<b>中央〜右側</b>に集落・住宅・倉庫が密集。平坦だが細い路地・建物密集地が多く <b>CQB（市街戦）が発生しやすい</b>。海岸はエメラルドグリーンで作戦時は <b>上陸ポイントとして重要</b>。重要施設＝大木港／通信施設／簡易発電所／漁協倉庫／集落内重要建物。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０４</span><h2 class="sec-title" style="color:#fff">任務<span class="en">MISSION ── 第36戦闘団</span></h2></div>
+    <div style="background:var(--paper);padding:8px 26px;color:var(--ink)">
+      <div class="obj"><div class="objno">1</div><div class="objtxt">東亜連邦特殊部隊の撃滅<span>DESTROY HOSTILE FORCE</span></div></div>
+      <div class="obj"><div class="objno">2</div><div class="objtxt">占拠された重要施設の奪還<span>SEIZE KEY FACILITIES ── 通信・港湾・発電 等</span></div></div>
+      <div class="obj"><div class="objno">3</div><div class="objtxt">島内に取り残された民間人の救出・保護<span>RESCUE &amp; PROTECT CIVILIANS</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０５</span><h2 class="sec-title">運営インフォメーション<span class="en">ADMIN &amp; LOGISTICS</span></h2></div>
+
+    <div class="subhead">VENUE &amp; FEE <span class="jp">／ 会場・参加費</span></div>
+    <dl class="metarow" style="margin-top:0">
+      <div><dt>会場</dt><dd>サバゲーパラダイス</dd></div>
+      <div><dt>所在地</dt><dd>千葉県山武市大木470-1</dd></div>
+      <div><dt>参加費</dt><dd>5,000円</dd></div>
+      <div><dt>定員</dt><dd>150名</dd></div>
+    </dl>
+
+    <div class="subhead">TASK ORGANIZATION <span class="jp">／ 部隊編成（赤 / 青）</span></div>
+    <div class="taskorg">
+      <div class="team reveal" style="--tc:var(--red)">
+        <p class="force">RED FORCE ／ 赤</p>
+        <p class="unit">第1中隊</p>
+        <p class="desc">陸自メイン・旧装備中心。各隊の特色を活かした迫力ある展開を。</p>
+        <p class="plabel">小隊編成 / Platoons</p>
+        <div class="platoons"><span>1小隊</span><span>2小隊</span><span>3小隊</span></div>
+        <p class="plabel">無線網図（状況戦）/ Radio Net</p>
+        <figure class="shot" style="margin-top:0"><a href="images/musen-aka1.jpg" target="_blank" rel="noopener"><img src="images/musen-aka1.jpg" loading="lazy" alt="無線網図 赤1中隊"></a><figcaption>赤1中隊 無線網図 ── クリックで原寸</figcaption></figure>
+      </div>
+      <div class="team reveal" style="--tc:#1f6f9e">
+        <p class="force">BLUE FORCE ／ 青</p>
+        <p class="unit">第2中隊</p>
+        <p class="desc">陸自・空自・海自の混成。一体感を高めた編成。</p>
+        <p class="plabel">小隊編成 / Platoons</p>
+        <div class="platoons"><span>1小隊</span><span>2小隊</span><span>3小隊</span></div>
+        <p class="plabel">無線網図（状況戦）/ Radio Net</p>
+        <figure class="shot" style="margin-top:0"><a href="images/musen-ao1.jpg" target="_blank" rel="noopener"><img src="images/musen-ao1.jpg" loading="lazy" alt="無線網図 青2中隊"></a><figcaption>青2中隊 無線網図 ── クリックで原寸</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="subhead">SAFETY &amp; LOGISTICS <span class="jp">／ セーフティ・物流</span></div>
+    <div class="svc">
+      <div class="svc-card reveal">
+        <h4>SAFETY ／ セーフティ配置</h4>
+        <figure class="shot" style="margin:0 0 12px"><img src="images/safety-area.jpg" loading="lazy" alt="セーフティエリア奥側の座席"><figcaption>FAR SIDE / 奥側の席 ＝ 赤・第1中隊エリア</figcaption></figure>
+        <p>赤はセーフティ奥側、青は手前側へ。作戦を練り、親睦を深めて頂くための配置です。</p>
+        <p>席は準備しますが、多くの方が参加されるため、お一人での参加の方は相席でお願いします。</p>
+      </div>
+      <div class="svc-card reveal">
+        <h4>LOGISTICS ／ 物流（宅急便）</h4>
+        <figure class="shot" style="margin:0 0 12px"><img src="images/logistics-yamato.jpg" loading="lazy" alt="ヤマト運輸のトラック"><figcaption>ヤマト運輸 配送・集荷対応</figcaption></figure>
+        <p>装備を軽くしたい方・新幹線/レンタカーの方向け。前日に時間指定でヤマト運輸による配送が可能（集荷も可）。</p>
+        <p>配送を行う方は、運営（<a href="https://x.com/HIRYU_TACTICS" target="_blank" rel="noopener" style="color:var(--red)">@HIRYU_TACTICS</a>）までDMで連絡を。</p>
+      </div>
+    </div>
+
+    <div class="subhead">SPIRIT OF JFM <span class="jp">／ 趣旨</span></div>
+    <div class="spirit reveal">
+      <p>JFMは、自衛隊への愛やリスペクトを持った仲間が集うイベントです。「形だけ合わせておけばいい」という考え方とは異なりますので、何卒ご理解をお願いいたします。</p>
+      <p class="punch">皆で楽しい『訓練』にしましょう！</p>
+      <figure class="shot" style="margin-top:18px"><img src="images/spirit-jfm-members.jpg" loading="lazy" alt="JFM参加者の集合写真"><figcaption>第36戦闘団 // JFM 参加者の皆さん</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０６</span><h2 class="sec-title">全般時程<span class="en">TIME SCHEDULE（予定）</span></h2></div>
+    <div class="sched-2col">
+    <div>
+      <div class="sched-day">6/26 ── 前日</div>
+      <ol class="srail">
+        <li class="srow"><span class="stime">1700〜1830</span><span class="sdot"></span><span class="stitle">前泊組受け入れ</span></li>
+      </ol>
+      <div class="sched-day">6/27 ── 当日</div>
+      <ol class="srail">
+        <li class="srow"><span class="stime">0700</span><span class="sdot"></span><span class="stitle">スタッフ・運営集合</span></li>
+        <li class="srow"><span class="stime">0730〜0930</span><span class="sdot"></span><span class="stitle">状況により事前受付開始</span></li>
+        <li class="srow"><span class="stime">0800</span><span class="sdot"></span><span class="stitle">セーフティオープン</span></li>
+        <li class="srow"><span class="stime">0840〜0900</span><span class="sdot"></span><span class="stitle">訓練展示要員予行</span></li>
+        <li class="srow mk"><span class="stime">0930〜1020</span><span class="sdot"></span><span class="stitle"><span class="sflag r">節目</span>訓練開始式</span></li>
+        <li class="srow"><span class="stime">1030〜1120</span><span class="sdot"></span><span class="stitle">ゲーム（フラッグ＆CAS）</span></li>
+        <li class="srow"><span class="stime">1130〜1200</span><span class="sdot"></span><span class="stitle">訓練展示</span></li>
+        <li class="srow bk"><span class="stime">1200〜1250</span><span class="sdot"></span><span class="stitle"><span class="sflag b">休憩</span>昼休み</span></li>
+        <li class="srow"><span class="stime">1255〜1310</span><span class="sdot"></span><span class="stitle">車両安全教育</span></li>
+        <li class="srow"><span class="stime">1310〜1330</span><span class="sdot"></span><span class="stitle">命令下達</span></li>
+        <li class="srow mk"><span class="stime">1340〜1420</span><span class="sdot"></span><span class="stitle"><span class="sflag r">メイン</span>#1 状況戦</span></li>
+        <li class="srow mk"><span class="stime">1430〜1510</span><span class="sdot"></span><span class="stitle"><span class="sflag r">メイン</span>#2 状況戦</span></li>
+        <li class="srow"><span class="stime">1540〜1610</span><span class="sdot"></span><span class="stitle">Jvs民間（ラスト）</span></li>
+        <li class="srow"><span class="stime">1630〜1700</span><span class="sdot"></span><span class="stitle">じゃんけん大会</span></li>
+        <li class="srow mk"><span class="stime">1700〜1710</span><span class="sdot"></span><span class="stitle"><span class="sflag k">終了</span>訓練終了式</span></li>
+      </ol>
+    </div>
+    <aside>
+      <div class="sched-day">SOURCE ── 原本資料</div>
+      <figure class="shot" style="margin-top:0"><a href="images/schedule-source.jpg" target="_blank" rel="noopener"><img src="images/schedule-source.jpg" loading="lazy" alt="全般時程（運営配布資料）"></a><figcaption>全般時程（運営配布資料）── クリックで原寸</figcaption></figure>
+      <p class="note">（状況により時間の変動等ございます）<br>※「サバパラ」＝会場「サバゲーパラダイス」（千葉県山武市大木470-1）の略称。</p>
+    </aside>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">０７</span><h2 class="sec-title" style="color:#fff">レギュレーション<span class="en">RULES OF ENGAGEMENT</span></h2></div>
+    <ul style="font-family:var(--gothic);color:#cfcfcf;font-size:15px;line-height:1.9;margin:0;padding-left:20px">
+      <li>サバゲーパラダイスのレギュレーションを準用（各人は確実にHPを確認）</li>
+      <li>服装：迷彩上下／ヘルメット又はブーニー・キャップ</li>
+      <li>装備：弾倉携行可能なプレートキャリア又はチェストリグが必須</li>
+      <li>使用可：改正銃刀法に適合したエアガンのみ</li>
+      <li>それを見据えた上で準備をお願いします。</li>
+    </ul>
+    <div class="alert" style="margin-top:20px"><div class="wrap" style="padding:14px 22px"><p class="a-main" style="font-size:clamp(18px,4vw,26px)">安全管理上、弾速チェックも実施致します。</p></div></div>
+    <p class="note">※ここでの「HP」はホームページ（＝サバゲーパラダイス公式サイト）を指します。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">●</span><h2 class="sec-title" style="color:#fff">当日に向けて<span class="en">PRE-BRIEF TIPS（主催より）</span></h2></div>
+    <ul style="font-family:var(--gothic);color:#cfcfcf;font-size:15px;line-height:1.9;margin:0;padding-left:20px">
+      <li>状況付与 ①〜⑨ を時系列で通し読みする。</li>
+      <li>自分のチーム・役割を想像しながら読む（我の任務は？ 何が優先か？）。</li>
+      <li>当日の命令下達前に、頭の中でシミュレーションしておく。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ttl">大木島奪還作戦 ／ 状況付与 統合ブリーフィング</div>
+    <div class="org">主催 / ORGANIZER ── 飛龍堂 <a href="https://x.com/HIRYU_TACTICS" target="_blank" rel="noopener">@HIRYU_TACTICS</a></div>
+    <div class="tag2">#JFM4</div>
+    <span class="end">完</span>
+    <div class="unof">※本ページは有志による非公式のファン制作（シン・ゴジラ調 特設版）です。公式情報は主催の告知をご確認ください。</div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
